@@ -9,6 +9,7 @@
 /// @date   10_Mar_2022
 ///////////////////////////////////////////////////////////////////////////////
 
+#include <iostream>
 #include "Animal.h"
 
 using namespace std;
@@ -56,7 +57,11 @@ void Animal::setWeight(float weight) {
 }
 
 void Animal::printInfo() {
-
+    cout << "Animal Fields" << endl;
+    cout << "\t Kingdom = [" << getKingdom() << "]" << endl;
+    cout << "\t Species = [" << getSpecies() << "]" << endl;
+    cout << "\t Weight = [" << getWeight() << "]" << endl;
+    cout << "\t Gender = [" << getGender() << "]" << endl;
 }
 
 bool Animal::isValid() {
